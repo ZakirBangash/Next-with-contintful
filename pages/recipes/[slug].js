@@ -28,7 +28,8 @@ export async function getStaticPaths() {
 })
     return {
        props: {
-         recipe : res.items[0]
+         recipe : res.items[0],
+         revalidate: 1
        }
     }
   
